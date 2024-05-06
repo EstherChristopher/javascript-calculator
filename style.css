@@ -1,0 +1,88 @@
+.phone {
+    width: 210px;
+    height: 450px;
+    border: 3px double rgb(172, 149, 16);
+    border-radius: 25px;
+    background-color: black;
+}
+.numbers .bi.bi-circle-fill{
+    color: rgb(114, 112, 112);
+}
+.advanced-arithmetic-operations  {
+    display: flex;
+    gap: 5px; 
+    margin-left: 17px;
+}
+.bi.bi-circle-fill {
+    font-size: 40px;
+    display: flex; 
+    color: rgb(212, 207, 207);
+    justify-content: center;
+    position: relative;
+}
+.bi.bi-circle-fill .icon-content {
+    font-size: initial;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+/* .numbers.bi.bi-circle-fill.icon-content {
+    color: white;
+} */
+.basic-arithmetic-operations .bi.bi-circle-fill {
+    color:rgb(240, 185, 33);
+}
+.basic-arithmetic-operations {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 140px;
+    margin-top: -37px;
+}
+.numbers {
+    display: grid; 
+    gap: 7px;
+    grid-template-columns: repeat(3, 40px);
+    align-items: center;
+    justify-items: center;
+    margin-top: -175px;
+    margin-left: 15px;
+    grid-auto-flow: column-reverse;
+}
+.arithmetic-operations .bi.bi-circle-fill:hover  {
+    color: #e0d4d4; 
+  }
+  .numbers .content-2 button {
+    color: white; 
+  }
+.bi.bi-circle-fill .signs {
+    color: white;
+}
+.basic-arithmetic-operations .signs button {
+    color: white;
+}
+.operation {
+  margin-top: 160px;
+  /* width: 100%;
+  height: 50px;
+  background-color: #f0f0f0;
+  padding: 10px; */
+  text-align: right;
+  font-size: 24px;
+  color: white;
+}
+.display {
+    color: #e0d4d4;
+}
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+/* rem, em, px, vw, vh, % */
+/* Display */
+/* Increment */
