@@ -14,17 +14,17 @@
   <body>
     <div class="phone">
         <div class="operation">
-          <div id="display" class="display"> 0 </div>
+          <div id="display" class="display">0</div>
         <div class="arithmetic-operations">
           <div class="advanced-arithmetic-operations">
             <i class="bi bi-circle-fill">
-              <span class="icon-content"><button class="operations">C</button></span>
+              <span class="icon-content"><button class="operations" id="operations" >AC</button></span>
             </i>
             <i class="bi bi-circle-fill">
-              <span class="icon-content"><button class="operations">DEL</button></span>
+              <span class="icon-content"><button class="operations" id="operations">+/-</button></span>
             </i>
             <i class="bi bi-circle-fill">
-              <span class="icon-content"><button class="operations" data-sign="%"><i class="bi bi-percent"></i></button></span>
+              <span class="icon-content"><button class="operations" id="operations" data-sign="%"><i class="bi bi-percent"></i></button></span>
             </i>
           </div>
           <div class="basic-arithmetic-operations">
@@ -33,16 +33,16 @@
                 ><button class="sign" data-sign="/">/</button></i></span
             ></i>
             <i class="bi bi-circle-fill"
-              ><span class="icon-content"><button class="sign" data-sign="*"><i class="bi bi-x signs"></i></button></span
+              ><span class="icon-content"><button class="sign" id="sign" data-sign="*"><i class="bi bi-x signs"></i></button></span
             ></i>
             <i class="bi bi-circle-fill"
-              ><span class="icon-content"><button class="sign" data-sign="-"><i class=" onClick bi bi-dash signs"></i></button></span
+              ><span class="icon-content"><button class="sign" id="sign" data-sign="-"><i class=" onClick bi bi-dash signs"></i></button></span
             ></i>
             <i class="bi bi-circle-fill"
-              ><span class="icon-content"><button class="sign" data-sign="+"><i class="bi bi-plus signs"></i></button></span
+              ><span class="icon-content"><button class="sign" id="sign" data-sign="+"><i class="bi bi-plus signs"></i></button></span
             ></i>
             <i class="bi bi-circle-fill"
-              ><span class="icon-content signs"><button class="sign" data-sign="=">=</button></span></i
+              ><span class="icon-content signs"><button class="sign" id="sign" data-sign="=">=</button></span></i
             >
           </div>
           <div class="numbers"> 
