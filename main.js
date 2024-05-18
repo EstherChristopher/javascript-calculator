@@ -128,7 +128,7 @@ signButtons.forEach((container) => {
     }
 
     let storedOperators = localStorage.getItem("operator") || "";
-    storedOperators = sign; // Append the clicked sign to the stored operators
+    storedOperators = sign; 
     localStorage.setItem("operator", storedOperators);
 
     // Update localStorage
@@ -142,9 +142,9 @@ signButtons.forEach((container) => {
 });
 
 function calculateResult(firstOperand, secondOperand, operator) {
-  // if (operator === "/") {
-  //   return firstOperand / secondOperand;
-  // }
+  if (operator === "/") {
+    return firstOperand / secondOperand;
+  }
   if (operator === "*") {
     return firstOperand * secondOperand;
   }
@@ -158,13 +158,13 @@ function calculateResult(firstOperand, secondOperand, operator) {
 
 // ! Equal to (result)
 
-// equalButton.addEventListener("click", () => {
-//   const secondOperand = display.textContent;
-//   const result = calculateResult(parseFloat(firstOperand), parseFloat(secondOperand), parseFloat(operator));
-//   display.textContent = result;
-//   firstOperand = "";
-//   operator = "";
-// });
+equalButton.addEventListener("click", () => {
+  const secondOperand = display.textContent;
+  const result = calculateResult(parseFloat(firstOperand), parseFloat(secondOperand), parseFloat(operator));
+  display.textContent = result;
+  firstOperand = "";
+  operator = "";
+});
 // ! AC and C
 
 const toggleClearMode = () => {
@@ -207,12 +207,4 @@ percentageButton.addEventListener("click", () => {
   localStorage.setItem("percent", percentage.toString());
 });
 
-// Setting the equal to button
-// AC and C should clear stuff from localStorage for each operation Done
-// Use console.log
-// The number after operator is showing for the result (=) instead of mathematical result. Check this!!
-// Take out C, leave only AC
-// Explain code, number following C isn't saved to localStorage, do the other signs work like the division sign,  something wrong with code, Kcee
-// Not just division, any sign
-// Either commented sign button code or new one
 // ! functions of the signs
