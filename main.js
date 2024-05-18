@@ -6,7 +6,8 @@ const numberButtons = document.querySelectorAll(".bi.bi-circle-fill.icon-2");
 
 const signButtons = document.querySelectorAll(".bi.bi-circle-fill");
 
-const button = document.getElementById("bi.bi-circle-fill");
+// const button = document.getElementById("bi.bi-circle-fill");
+const button = document.getElementById("operate");
 
 // const signSymbols = document.getElementById("symbols");
 
@@ -107,6 +108,8 @@ let signClicked = false;
 signButtons.forEach((container) => {
   container.addEventListener("click", () => {
     const button = container.querySelector(".sign")
+    if(button === null) return;
+    
     const sign = button.dataset.sign;
     signClicked = true;
 
@@ -157,6 +160,7 @@ function calculateResult(firstOperand, secondOperand, operator) {
 }
 
 // ! Equal to (result)
+let equalButton = document.querySelector("#equal-btn");
 
 equalButton.addEventListener("click", () => {
   const secondOperand = display.textContent;
@@ -184,6 +188,7 @@ button.addEventListener("click", () => {
   }
   toggleClearMode();
 });
+
 toggleClearMode();
 
 //! +/-
